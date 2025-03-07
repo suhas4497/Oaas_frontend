@@ -1,0 +1,264 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.intro {
+  text-align: center;
+  padding: 20px;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  color: black; /* Change text color to black */
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/bg.png');
+  background-size: auto;
+  background-position: center;
+  opacity: 0.5; /* Reduce opacity of the background image */
+  z-index: -1;
+}
+
+.intro h2 {
+  color: black; /* Change text color to black */
+  margin-bottom: 10px;
+  font-size: xxx-large;
+}
+
+.intro p {
+  color: black; /* Change text color to black */
+  margin: 0;
+  font-size: medium;
+  text-align: center;
+}
+
+.full-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(240, 243, 236);
+}
+
+.git-repo-scanner {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 21px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.git-repo-scanner h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.git-repo-scanner p {
+  color: #666;
+  margin: 0;
+}
+
+.git-repo-auth {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.git-repo-auth a:hover {
+  background-color: #ef6330;
+}
+
+.git-repo-auth a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.git-repo-auth .select-scan-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.git-repo-auth select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.git-repo-auth button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.git-repo-auth button:hover {
+  background-color: #218838;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  height: 45vh;
+}
+
+.sidebar {
+  width: 300px;
+  margin-right: 20px;
+  padding-left: 170px;
+}
+
+.main-content {
+  flex: 1;
+  padding-right: 100px;
+}
+
+.options-container {
+  margin-top: 20px;
+}
+
+.option-group {
+  margin-bottom: 20px;
+}
+
+.option-group-header {
+  display: flex;
+  align-items: center;
+}
+
+.option-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.option-group label {
+  font-weight: bold;
+  color: #555;
+}
+
+.option-group select {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.selected-tools {
+  margin-top: 10px;
+}
+
+.selected-tool {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.remove-button {
+  margin-left: auto;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a;
+}
+
+.parameters-container {
+  margin-top: 30px;
+}
+
+.parameters-container h3 {
+  color: #333;
+}
+
+.parameters-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.parameters-container li {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 5px;
+  font-size: xx-small;
+}
+
+.scan-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.scan-button-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.scan-button-container button:hover {
+  background-color: #0056b3;
+}
+
+.scan-result {
+  margin: 10px 0px;
+}
+
+.scan-result-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.scan-result-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scan-result-item li {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,15 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the font to the footer */
+.footer {
+  font-family: 'Roboto', sans-serif;
+  background-color: #151414;
+  color: #ffffff;
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.footer-bottom {
+  font-size: 14px;
+}

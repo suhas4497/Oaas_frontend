@@ -13,7 +13,7 @@ export default function LandingPage() {
     Logging: []
   });
 
-  const [parameters, setParameters] = useState(["environment", "platform.kafka_bootstrap_server_config", "aipo.mongodb.username"]);
+  const [parameters, setParameters] = useState(["environment", "platform.kafka_bootstrap_server_config", "aipo.mongodb.username","app.domain","kind","metadata.name"]);
   const [checkboxStatus, setCheckboxStatus] = useState({
     APM: false,
     Traceability: false,
@@ -99,7 +99,7 @@ export default function LandingPage() {
   const handleLogout = () => {
     if (activeAuth === 'azure') {
       // Logout from Azure
-      msalInstance.logout();
+      msalInstance.loginPopup();
       setAzureLoggedIn(false);
       setAzureAccessToken('');
       setAzureMemberId('');
